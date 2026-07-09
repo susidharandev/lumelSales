@@ -5,7 +5,7 @@
         public SyncBackgroundService() { }
         protected override Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            throw new NotImplementedException();
+            return Task.CompletedTask;
         }
         // implement background auto sycn with background service
     }
