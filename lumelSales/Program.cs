@@ -12,6 +12,7 @@ builder.Services.AddDbContext<AppDbContext> (option => option.UseSqlite(connecti
 
 builder.Services.AddScoped<CsvImportService>();
 builder.Services.AddScoped<SalesAnalysisService>();
+builder.Services.AddHostedService<SyncBackgroundService>();
 
 var app = builder.Build();
 
